@@ -9,12 +9,10 @@ export default function HomePage() {
           <div>
             <div className="pill">Premium Vietnamese Human Hair Supplier</div>
             <h1 className="hero-title">
-              River Raw Hair for global wholesale buyers who want premium quality, stable supply,
-              and long-term business support.
+              Premium Vietnamese Human Hair for Wholesale Buyers Worldwide
             </h1>
             <p className="hero-text">
-              Built to position River Raw Hair as a professional Vietnamese human hair supplier for salon owners,
-              resellers, beauty brands, and wholesale buyers.
+              River Raw Hair supplies premium Vietnamese human hair for salon owners, resellers, distributors, and beauty brands looking for stable quality, ready stock, and reliable long-term cooperation.
             </p>
             <div className="button-row">
               <ButtonLink href="/raw-hair">Explore Products</ButtonLink>
@@ -33,10 +31,13 @@ export default function HomePage() {
           </div>
 
           <div className="media-grid">
-            <PlaceholderImage
-              title="Hair stock wall or bundle display"
-              subtitle="Replace this with your real product image to create a stronger first impression."
-            />
+            <div className="placeholder-image" style={{ padding: 0, overflow: "hidden" }}>
+  <img
+    src="/hero-hair.jpg"
+    alt="Premium Vietnamese human hair bundles"
+    style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+  />
+</div>
             <Card className="feature-card dark-card">
               <h3>Available hair and custom production</h3>
               <p>
