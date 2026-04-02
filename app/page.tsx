@@ -9,10 +9,10 @@ export default function HomePage() {
           <div>
             <div className="pill">Premium Vietnamese Human Hair Supplier</div>
             <h1 className="hero-title">
-              Premium Vietnamese Human Hair for Wholesale Buyers Worldwide
+              Premium Vietnamese Human Hair for Wholesale Buyers
             </h1>
             <p className="hero-text">
-              River Raw Hair supplies premium Vietnamese human hair for salon owners, resellers, distributors, and beauty brands looking for stable quality, ready stock, and reliable long-term cooperation.
+              River Raw Hair supplies premium Vietnamese human hair for salon owners, resellers, distributors, and beauty brands looking for stable quality, available stock, and reliable long-term cooperation.
             </p>
             <div className="button-row">
               <ButtonLink href="/raw-hair">Explore Products</ButtonLink>
@@ -31,11 +31,22 @@ export default function HomePage() {
           </div>
 
           <div className="media-grid">
-            <div className="placeholder-image" style={{ padding: 0, overflow: "hidden" }}>
+            <div
+  className="placeholder-image"
+  style={{ padding: 0, overflow: "hidden", minHeight: "100%", position: "relative" }}
+>
   <img
     src="/hero-hair.jpg"
     alt="Premium Vietnamese human hair bundles"
     style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+  />
+  <div
+    style={{
+      position: "absolute",
+      inset: 0,
+      background: "linear-gradient(to top, rgba(0,0,0,0.18), rgba(0,0,0,0.02))",
+      pointerEvents: "none",
+    }}
   />
 </div>
             <Card className="feature-card dark-card">

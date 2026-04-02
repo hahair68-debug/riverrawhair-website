@@ -17,20 +17,20 @@ export const trustMetrics = [
 
 export const values = [
   {
-    title: 'Stable quality',
-    text: 'Built for buyers who care about consistent hair quality and smoother repeat orders.',
+    title: "Factory-direct supply",
+    text: "Work with a Vietnamese hair supplier that focuses on stable quality, smooth communication, and long-term business support.",
   },
   {
-    title: 'Factory direct',
-    text: 'River Raw Hair is positioned as a Vietnamese factory-focused supplier, not just a simple trading page.',
+    title: "Available stock",
+    text: "Selected products are available to ship quickly, helping buyers save time and respond faster to market demand.",
   },
   {
-    title: 'Available to ship',
-    text: 'We offer both available hair and custom production messaging to help buyers decide faster.',
+    title: "Custom production",
+    text: "We support custom lengths, textures, colors, and wig options for buyers who need a more flexible wholesale collection.",
   },
   {
-    title: 'Long-term business',
-    text: 'Our first priority is value service, communication, and long-term cooperation.',
+    title: "Global wholesale service",
+    text: "River Raw Hair works with salon owners, resellers, distributors, and beauty brands in different international markets.",
   },
 ];
 
