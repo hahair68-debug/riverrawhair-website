@@ -48,8 +48,7 @@ export default function AboutPage() {
           <SectionIntro
             eyebrow="Core values"
             title="Why you should choose us?"
-            text="YOUR SATISFACTION IS OUR SUCCESS! We put customers first and pursue long-term, win-win partnerships built on reliable quality, transparent pricing, and steady supply. 
-"
+            text="YOUR SATISFACTION IS OUR SUCCESS! We put customers first and pursue long-term, win-win partnerships built on reliable quality, transparent pricing, and steady supply. "
           />
           <div className="mini-grid four top-gap">
             {values.map((item) => (

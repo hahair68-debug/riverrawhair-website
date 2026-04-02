@@ -1,10 +1,17 @@
 :root {
-  --bg: #ffffff;
-  --soft: #f7f7f5;
-  --text: #161616;
-  --muted: #666666;
-  --line: #e6e4df;
-  --dark: #111111;
+  --bg: #120d12;
+  --soft: #1b131b;
+  --soft-2: #241824;
+  --panel: #211721;
+  --panel-2: #2b1d2b;
+  --text: #fff7fb;
+  --muted: #d0bccb;
+  --line: rgba(255, 255, 255, 0.12);
+  --dark: #0f0a0f;
+  --pink: #f05aa6;
+  --pink-2: #ff8dc4;
+  --pink-3: #ffd4e8;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
 * {
@@ -18,7 +25,10 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top left, rgba(240, 90, 166, 0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(255, 141, 196, 0.12), transparent 24%),
+    linear-gradient(180deg, #120d12 0%, #181018 100%);
   color: var(--text);
 }
 
@@ -42,9 +52,9 @@ textarea {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.92);
-  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+  background: rgba(14, 10, 14, 0.78);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .header-row {
@@ -68,11 +78,12 @@ textarea {
 
 .brand strong {
   font-size: 18px;
+  color: var(--text);
 }
 
 .brand small {
   font-size: 11px;
-  color: var(--muted);
+  color: #d8aeca;
   text-transform: uppercase;
   letter-spacing: 0.18em;
 }
@@ -84,9 +95,10 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--dark);
+  background: linear-gradient(135deg, var(--pink) 0%, var(--pink-2) 100%);
   color: white;
   font-weight: 700;
+  box-shadow: 0 10px 24px rgba(240, 90, 166, 0.35);
 }
 
 .main-nav {
@@ -98,10 +110,11 @@ textarea {
 .main-nav a {
   color: var(--muted);
   font-size: 14px;
+  transition: 0.2s ease;
 }
 
 .main-nav a:hover {
-  color: var(--text);
+  color: var(--pink-3);
 }
 
 .header-cta {
@@ -120,19 +133,32 @@ textarea {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 0 18px;
+  min-height: 48px;
+  padding: 0 20px;
   border-radius: 16px;
-  background: var(--dark);
+  background: linear-gradient(135deg, var(--pink) 0%, var(--pink-2) 100%);
   color: white;
-  border: 1px solid var(--dark);
+  border: 1px solid transparent;
   cursor: pointer;
+  font-weight: 700;
+  box-shadow: 0 12px 28px rgba(240, 90, 166, 0.28);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(240, 90, 166, 0.34);
 }
 
 .button-secondary {
-  background: white;
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text);
-  border-color: var(--line);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: none;
+}
+
+.button-secondary:hover {
+  border-color: rgba(255, 141, 196, 0.45);
 }
 
 .hero-section,
@@ -140,16 +166,18 @@ textarea {
 .soft-section,
 .dark-section,
 .page-hero {
-  padding: 72px 0;
+  padding: 76px 0;
 }
 
 .soft-section,
 .page-hero {
-  background: var(--soft);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.01) 100%);
 }
 
 .dark-section {
-  background: var(--dark);
+  background:
+    radial-gradient(circle at left top, rgba(240, 90, 166, 0.15), transparent 30%),
+    linear-gradient(180deg, #0f0a0f 0%, #161016 100%);
   color: white;
 }
 
@@ -170,6 +198,7 @@ textarea {
   font-size: clamp(36px, 6vw, 64px);
   line-height: 1.04;
   margin: 16px 0 0;
+  letter-spacing: -0.03em;
 }
 
 .hero-text,
@@ -181,13 +210,13 @@ textarea {
 .footer-text {
   color: var(--muted);
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .dark-section .section-text,
 .dark-section .card p,
 .dark-section .placeholder-text {
-  color: rgba(255, 255, 255, 0.78);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .pill,
@@ -196,13 +225,14 @@ textarea {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--muted);
+  color: #e3aac9;
 }
 
 .section-title {
   margin: 14px 0 0;
   font-size: clamp(30px, 5vw, 52px);
   line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 .subheading,
@@ -250,28 +280,31 @@ textarea {
 .list-chip {
   border: 1px solid var(--line);
   border-radius: 28px;
-  background: white;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.02) 100%);
 }
 
 .card,
 .placeholder-image {
   padding: 24px;
-  box-shadow: 0 10px 30px rgba(15, 15, 15, 0.04);
+  box-shadow: var(--shadow);
 }
 
 .card strong {
   display: block;
   font-size: 26px;
   margin-top: 8px;
+  color: var(--text);
 }
 
 .card span {
-  color: var(--muted);
+  color: #d7bfd0;
 }
 
 .placeholder-image {
   min-height: 240px;
-  background: linear-gradient(135deg, #f2f1ee 0%, #ffffff 62%, #f8f7f4 100%);
+  background:
+    radial-gradient(circle at top left, rgba(240, 90, 166, 0.18), transparent 34%),
+    linear-gradient(135deg, #271927 0%, #1a131a 58%, #120d12 100%);
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -281,7 +314,7 @@ textarea {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--muted);
+  color: #e3aac9;
   margin-bottom: 12px;
 }
 
@@ -304,13 +337,15 @@ textarea {
 }
 
 .dark-card {
-  background: var(--dark);
+  background:
+    radial-gradient(circle at top left, rgba(240, 90, 166, 0.18), transparent 35%),
+    linear-gradient(180deg, #1a1118 0%, #100b10 100%);
   color: white;
 }
 
 .dark-outline {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.13);
   color: white;
 }
 
@@ -340,13 +375,25 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 14px 16px;
-  background: white;
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
   outline: none;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bfa7ba;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: rgba(255, 141, 196, 0.55);
+  box-shadow: 0 0 0 3px rgba(240, 90, 166, 0.12);
+}
+
 .site-footer {
-  border-top: 1px solid var(--line);
-  background: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0f0a0f;
 }
 
 .footer-grid {
@@ -370,13 +417,17 @@ textarea {
   font-size: 14px;
 }
 
+.footer-links a:hover {
+  color: var(--pink-3);
+}
+
 .footer-links > div {
   display: grid;
   gap: 10px;
 }
 
 .footer-bottom {
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   justify-content: space-between;
   gap: 14px;
@@ -386,10 +437,32 @@ textarea {
 .stars {
   font-size: 18px;
   margin-bottom: 12px;
+  color: #ff9ccc;
 }
 
 .faq-item h3 {
   font-size: 22px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 58px;
+  height: 58px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #25d366 0%, #18b356 100%);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.28);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-1px);
 }
 
 @media (max-width: 980px) {

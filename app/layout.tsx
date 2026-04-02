@@ -13,10 +13,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
+  <Header />
+  <main>{children}</main>
+  <Footer />
+  <a
+    href="https://wa.me/84352117091"
+    target="_blank"
+    rel="noreferrer"
+    className="whatsapp-float"
+    aria-label="Chat on WhatsApp"
+  >
+    WA
+  </a>
+</body>
     </html>
   );
 }
