@@ -17,20 +17,20 @@ export const trustMetrics = [
 
 export const values = [
   {
-    title: "Factory-direct supply",
-    text: "Work with a Vietnamese hair supplier that focuses on stable quality, smooth communication, and long-term business support.",
+    title: "Raw Vietnamese Hair",
+    text: "Soft texture, natural shine, aligned cuticles, and long-lasting quality for wholesale buyers who want a premium collection.",
   },
   {
-    title: "Available stock",
-    text: "Selected products are available to ship quickly, helping buyers save time and respond faster to market demand.",
+    title: "Bone Straight Hair",
+    text: "A smooth, sleek, and luxury look for customers who love polished straight hair with beautiful movement and soft shine.",
   },
   {
-    title: "Custom production",
-    text: "We support custom lengths, textures, colors, and wig options for buyers who need a more flexible wholesale collection.",
+    title: "Body Wave Hair",
+    text: "One of the most popular textures for resale, salons, and wig making thanks to its soft waves and commercial appeal.",
   },
   {
-    title: "Global wholesale service",
-    text: "River Raw Hair works with salon owners, resellers, distributors, and beauty brands in different international markets.",
+    title: "Closures & Frontals",
+    text: "HD lace and practical lace options for buyers who want to complete wig collections with a more natural finish.",
   },
 ];
 
