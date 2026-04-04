@@ -4,9 +4,9 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'River Raw Hair | Premium Vietnamese Human Hair Supplier',
+  title: 'River Raw Hair | belongs to Vietnam Remy Hair Co., Ltd.- Premium Vietnamese Human Hair Supplier',
   description:
-    'River Raw Hair is a premium Vietnamese human hair supplier for wholesale buyers, salons, resellers, and beauty brands.',
+    'River Raw Hair (belongs to Vietnam Remy Hair Co., Ltd.,- Hair 68) is a premium Vietnamese human hair supplier for wholesale buyers, salons, resellers, and beauty brands.',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
