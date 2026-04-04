@@ -8,7 +8,7 @@ export default function AboutPage() {
         <Container>
           <SectionIntro
             eyebrow="About River Raw Hair"
-            title="RIVER RAW HAIR is a premium Vietnamese factory specializing in 100% raw human hair"
+            title="RIVER RAW HAIR is belongs to Vietnam Remy Hair Co., Ltd., (Hair68) - a premium Vietnamese factory specializing in 100% raw human hair"
             text="Hair is ethically sourced from healthy donors, processed without chemicals to preserve its natural shine and strength. With factory-direct pricing and strict QC by bundle, River Raw Hair supplies wholesalers, salons, and wig makers worldwide"
           />
         </Container>
@@ -19,7 +19,7 @@ export default function AboutPage() {
           <div>
             <h2 className="subheading">Brand story</h2>
             <p className="body-text">
-              River Raw Hair is positioned as a premium Vietnamese human hair supplier for wholesale buyers,
+              River Raw Hair (Vietnam Remy Hair Co,.ltd - hair 68)is positioned as a premium Vietnamese human hair supplier for wholesale buyers,
               salon owners, wig businesses, resellers, and beauty brands who need stable quality, better communication,
               and a supplier they can grow with.
             </p>

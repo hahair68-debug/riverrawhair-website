@@ -12,7 +12,7 @@ export default function HomePage() {
               Premium Vietnamese Human Hair for Wholesale Buyers
             </h1>
             <p className="hero-text">
-              River Raw Hair supplies premium Vietnamese human hair for salon owners, resellers, distributors, and beauty brands looking for stable quality, available stock, and reliable long-term cooperation.
+              River Raw Hair (belongs to Vietnam Remy Hair Co., Ltd.,- Hair68) supplies premium Vietnamese human hair for salon owners, resellers, distributors, and beauty brands looking for stable quality, available stock, and reliable long-term cooperation.
             </p>
             <div className="button-row">
               <ButtonLink href="/raw-hair">Explore Products</ButtonLink>

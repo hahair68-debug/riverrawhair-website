@@ -8,7 +8,7 @@ export default function ContactPage() {
         <Container>
           <SectionIntro
             eyebrow="Contact Us"
-            title="Contact River Raw Hair for wholesale inquiries"
+            title="Contact River Raw Hair (Vietnam Remy Hair Co., Ltd. - Hair68) ,for wholesale inquiries"
             text="We supply premium Vietnamese human hair for salon owners, resellers, and wholesale buyers worldwide."
           />
         </Container>
