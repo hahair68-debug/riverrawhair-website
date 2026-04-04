@@ -66,17 +66,32 @@ export default function HomePage() {
       </section>
 
       <section className="soft-section">
-        <Container>
-          <div className="mini-grid four">
-            {values.map((item) => (
-              <Card key={item.title}>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </section>
+  <Container>
+    <SectionIntro
+      eyebrow="Best sellers"
+      title="Core product categories for wholesale buyers"
+      text="Explore the main product lines River Raw Hair offers for salon owners, resellers, and beauty brands worldwide."
+    />
+    <div className="mini-grid four top-gap">
+      {values.map((item) => (
+  <Card key={item.title}>
+    <div className="product-card-image">
+      <img
+        src={item.image}
+        alt={item.title}
+      />
+    </div>
+    <h3>{item.title}</h3>
+    <p>{item.text}</p>
+    <a href={item.link} className="product-link">
+      View details
+    </a>
+  </Card>
+))}
+    </div>
+  </Container>
+</section>
+        
 
       <section className="section">
         <Container>

@@ -19,21 +19,28 @@ export const values = [
   {
     title: "Raw Vietnamese Hair",
     text: "Soft texture, natural shine, aligned cuticles, and long-lasting quality for wholesale buyers who want a premium collection.",
+    image: "/raw-hair.jpg",
+    link: "/raw-hair",
   },
   {
     title: "Bone Straight Hair",
     text: "A smooth, sleek, and luxury look for customers who love polished straight hair with beautiful movement and soft shine.",
+    image: "/bone-straight.jpg",
+    link: "/raw-hair",
   },
   {
     title: "Body Wave Hair",
     text: "One of the most popular textures for resale, salons, and wig making thanks to its soft waves and commercial appeal.",
+    image: "/body-wave.jpg",
+    link: "/raw-hair",
   },
   {
     title: "Closures & Frontals",
     text: "HD lace and practical lace options for buyers who want to complete wig collections with a more natural finish.",
+    image: "/closure.jpg",
+    link: "/closures",
   },
 ];
-
 export const buyerTypes = [
   'Salon owners',
   'Hair resellers',

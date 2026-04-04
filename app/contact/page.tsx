@@ -21,8 +21,8 @@ export default function ContactPage() {
             <h3>Get in touch with River Raw Hair</h3>
             <div className="stack-list top-gap-small">
               <div className="list-chip">Email: Ha.hair68@gmail.com</div>
-              <div className="list-chip">WhatsApp: +84352117091</div>
-              <div className="list-chip">Hotline: +84352117091</div>
+              <div className="list-chip">WhatsApp: +84 352 117 091</div>
+              <div className="list-chip">Hotline: +84 352 117   091</div>
               <div className="list-chip">Address: Hai Boi, Dong Anh, Ha Noi</div>
             </div>
             <p className="top-gap-small">
